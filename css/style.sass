@@ -1,1 +1,159 @@
 @import "reset"
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,500&family=Roboto:wght@500;700&display=swap')
+
+$colorWhite: #fff
+$colorTrans: #ffffffaf
+
+body
+    font-size: 16px
+    font-family: 'Raleway', sans-serif
+
+    .banner
+        display: grid
+        grid-template-rows: repeat(3, auto)
+        position: relative
+        width: 90%
+        max-width: 1200px
+        height: 80vh
+        margin: 5rem auto
+
+        .banner__up
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 3rem
+            background-color: #2531d6
+            border-radius: 0.5rem 0.5rem 0 0
+
+            .banner__log
+                padding-left: 2rem
+
+                .logo
+                    display: flex
+                    align-items: center
+                    justify-content: space-evenly
+                    .logo__imag
+                        margin-right: 1rem
+                        .logo__img
+                            width: 1.875rem
+                            height: 1.875rem
+                            border-radius: 0.625rem
+
+                    .logo__mark
+                        color: $colorWhite
+                        font-size: 1.5rem
+
+            .banner__link
+                width: 100%
+
+                .banner__enlace
+                    display: flex
+                    justify-content: flex-end
+                    font-size: 0.9rem
+                    font-weight: 600
+
+                    .banner__list
+                        margin: 0 0.7rem
+                        color: $colorTrans
+                        list-style: none
+                        text-transform: capitalize
+
+        .banner__half
+            height: 40rem
+            background-color: #3742e7
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .banner-cont
+                background-color: #2531d6
+                height: 100%
+                width: 35%
+                .text
+                    position: absolute
+                    left: 3.75rem
+                    top: 12.5rem
+                    .text__uno
+                        text-transform: capitalize
+                        color: $colorTrans
+                        font-size: 2.3rem
+                        .text__title1
+                            margin: 0.8rem 0
+                        .text__title2
+                            margin-bottom: 2rem
+                    .text__dos
+                        text-transform: capitalize
+                        color: #ffffff62
+                        font-size: 1.2rem
+                        .text__secod1
+                            margin-bottom: 0.8rem
+                    .card
+                        width: 100%
+                        height: 5.625rem
+                        border-radius: 0.5rem
+                        background-color: $colorWhite
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        padding: 0 1.5rem
+                        margin-top: 4rem
+                        .card__texto
+                            font-family: 'Roboto', sans-serif
+                            .card__tuno
+                                color: rgba(0,0 ,0 ,0.4)
+                                font-weight: 700
+                                font-size: 0.8rem
+                                text-transform: capitalize
+                                margin-bottom: 0.5rem
+                            .card__tdos
+                                color: #000000ad
+                                font-size: 1.4rem
+                                font-weight: 700
+
+                        .boton
+                            text-decoration: none
+                            color: $colorTrans
+                            text-transform: capitalize
+                            border-radius: 0.5rem
+                            background-color: #126147
+                            width: 33%
+                            height: 55px
+                            display: inline-flex
+                            align-items: center
+                            justify-content: center
+                            font-size: 0.8rem
+                            font-weight: 600
+
+            .banner__image
+                position: absolute
+                right: 40px
+                top: 220px
+                width: 400px
+                max-height: 550px
+                overflow: hidden
+                .igm
+                    overflow: hidden
+                    .igm__image
+                        width: 440px
+                        height: 600px
+
+        .banner__down
+            display: flex
+            align-items: center
+            justify-content: space-evenly
+            width: 100%
+            height: 8.125rem
+            background-color: #86b4c7
+            margin-bottom: 2rem
+            .info
+                display: inline-flex
+                align-items: center
+                justify-content: space-between
+                .icono__font
+                    margin-right: 2rem
+                    font-size: 30px
+                    border-radius: 1rem
+
+                .fas
+                    background-color: #17e8f7
