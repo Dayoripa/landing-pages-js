@@ -3,10 +3,18 @@
 
 $colorWhite: #fff
 $colorTrans: #ffffffaf
+$colorBannerD: #E0F4FB
+$cbannerUp: #50b385
+$cbannerHalf: #52b788
+$cbannerDown: #aef3e7
+$ctext: #d8f3dc
+$boton: #2c699a
+$card: #f1faee
 
 body
     font-size: 16px
     font-family: 'Raleway', sans-serif
+    padding-bottom: 2rem
 
     .banner
         display: grid
@@ -16,7 +24,7 @@ body
         max-width: 1200px
         height: 80vh
         margin: 5rem auto
-
+        font-size: 16px
         .banner__up
             width: 100%
             height: 100%
@@ -24,7 +32,7 @@ body
             align-items: center
             justify-content: space-between
             padding: 3rem
-            background-color: #2531d6
+            background-color: $cbannerUp
             border-radius: 0.5rem 0.5rem 0 0
 
             .banner__log
@@ -36,6 +44,19 @@ body
                     justify-content: space-evenly
                     .logo__imag
                         margin-right: 1rem
+                        color: green
+                        font-size: 25px
+                        background-color: #a9f3d4
+                        width: 50px
+                        height: 50px
+                        line-height: 50px
+                        text-align: center
+                        border-radius: 50%
+                        @media screen and ( max-width:  950px)
+                            font-size: 20px
+                            width: 40px
+                            height: 40px
+                            line-height: 40px
                         .logo__img
                             width: 1.875rem
                             height: 1.875rem
@@ -44,6 +65,8 @@ body
                     .logo__mark
                         color: $colorWhite
                         font-size: 1.5rem
+                        @media screen and ( max-width:  950px)
+                            font-size: 1rem
 
             .banner__link
                 width: 100%
@@ -53,21 +76,23 @@ body
                     justify-content: flex-end
                     font-size: 0.9rem
                     font-weight: 600
+                    @media screen and ( max-width:  950px)
+                        font-size: 12px
 
                     .banner__list
                         margin: 0 0.7rem
-                        color: $colorTrans
+                        color: $colorWhite
                         list-style: none
                         text-transform: capitalize
 
         .banner__half
             height: 40rem
-            background-color: #3742e7
+            background-color: $cbannerHalf
             display: flex
             align-items: center
             justify-content: space-between
             .banner-cont
-                background-color: #2531d6
+                background-color: $cbannerUp
                 height: 100%
                 width: 35%
                 .text
@@ -78,6 +103,8 @@ body
                         text-transform: capitalize
                         color: $colorTrans
                         font-size: 2.3rem
+                        @media screen and ( max-width:  950px)
+                            font-size: 1.8rem
                         .text__title1
                             margin: 0.8rem 0
                         .text__title2
@@ -92,7 +119,7 @@ body
                         width: 100%
                         height: 5.625rem
                         border-radius: 0.5rem
-                        background-color: $colorWhite
+                        background-color: $card
                         display: flex
                         align-items: center
                         justify-content: space-between
@@ -116,7 +143,7 @@ body
                             color: $colorTrans
                             text-transform: capitalize
                             border-radius: 0.5rem
-                            background-color: #126147
+                            background-color: $boton
                             width: 33%
                             height: 55px
                             display: inline-flex
@@ -127,33 +154,53 @@ body
 
             .banner__image
                 position: absolute
-                right: 40px
-                top: 220px
+                right: 80px
+                top: 5.3125rem
                 width: 400px
-                max-height: 550px
+                max-height: 700px
                 overflow: hidden
                 .igm
                     overflow: hidden
                     .igm__image
-                        width: 440px
-                        height: 600px
+                        width: 500px
+                        height: 700px
 
         .banner__down
             display: flex
             align-items: center
             justify-content: space-evenly
             width: 100%
-            height: 8.125rem
-            background-color: #86b4c7
-            margin-bottom: 2rem
+            height: 7rem
+            background-color: $cbannerDown
             .info
                 display: inline-flex
                 align-items: center
                 justify-content: space-between
-                .icono__font
-                    margin-right: 2rem
-                    font-size: 30px
-                    border-radius: 1rem
-
-                .fas
-                    background-color: #17e8f7
+                .icono
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 50px
+                    height: 50px
+                    border-radius: 0.7rem
+                    margin-right: 0.8rem
+                .icon1
+                    background-color: #67D9F7
+                    .icono__font
+                        font-size: 1.8rem
+                        color: white
+                .icon2
+                    background-color: #7868E6
+                    .icono__font
+                        font-size: 1.8rem
+                        color: white
+                .icon3
+                    background-color: #00917B
+                    .icono__font
+                        font-size: 1.8rem
+                        color: white
+                .paragraph
+                    font-size: 0.9rem
+                    .paragraph__txto1
+                        font-weight: bold
+                        margin-bottom: 1rem
